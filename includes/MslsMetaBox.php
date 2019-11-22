@@ -104,7 +104,7 @@ class MslsMetaBox extends MslsMain {
 		foreach ( MslsPostType::instance()->get() as $post_type ) {
 			add_meta_box(
 				'msls',
-				__( 'Multisite Language Switcher', 'multisite-language-switcher' ),
+				apply_filters( 'msls_metabox_main_title', __( 'Multisite Language Switcher', 'multisite-language-switcher' ) ),
 				[
 					$this,
 					(
@@ -121,7 +121,7 @@ class MslsMetaBox extends MslsMain {
 			if ( MslsOptions::instance()->activate_content_import ) {
 				add_meta_box(
 					'msls-content-import',
-					__( 'Multisite Language Switcher - Import content', 'multisite-language-switcher' ),
+					apply_filters( 'msls_metabox_import_title', __( 'Multisite Language Switcher - Import content', 'multisite-language-switcher' ) ),
 					[
 						ContentImportMetaBox::instance(),
 						'render',
