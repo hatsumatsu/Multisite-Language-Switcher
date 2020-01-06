@@ -8,6 +8,7 @@ Version: 2.3.0
 Author: Dennis Ploetner
 Author URI: http://lloc.de/
 Text Domain: multisite-language-switcher
+GitHub Plugin URI: hatsumatsu/Multisite-Language-Switcher
 */
 
 /*
